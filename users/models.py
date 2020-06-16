@@ -15,3 +15,9 @@ class User(AbstractUser):
 class Address(models.Model):
     "Generated Model"
     street = models.BigIntegerField()
+    province = models.CharField(max_length=256, null=True, blank=True,)
+
+
+class Bank(models.Model):
+    "Generated Model"
+    bankName = models.BigIntegerField()
